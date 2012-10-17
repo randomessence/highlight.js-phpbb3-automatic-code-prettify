@@ -48,11 +48,15 @@ and replace it with
 
 the open the `prosilver/template/forum_fn.js` and find
 
-`	var e = a.parentNode.parentNode.getElementsByTagName('PRE')[0];`
+```js
+	var e = a.parentNode.parentNode.getElementsByTagName('PRE')[0];
+```
 
 replace it with
 
-`	var e = a.parentNode.parentNode.getElementsByTagName('CODE')[0];`
+```javascript
+	var e = a.parentNode.parentNode.getElementsByTagName('CODE')[0];
+```
 
 
 the first edit makes it so all code is detected and prettifed in stock tags + fixes from the mod we installed.
