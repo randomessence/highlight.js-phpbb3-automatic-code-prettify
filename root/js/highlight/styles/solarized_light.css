@@ -7,6 +7,7 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 pre code {
   display: block; padding: 0.5em;
   background: #fdf6e3; color: #657b83;
+  overflow: auto;
 }
 
 pre .comment,

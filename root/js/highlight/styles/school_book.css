@@ -8,6 +8,7 @@ pre code {
   display: block; padding: 15px 0.5em 0.5em 30px;
   font-size: 11px !important;
   line-height:16px !important;
+  overflow: auto;
 }
 
 pre{

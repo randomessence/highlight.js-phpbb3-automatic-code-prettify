@@ -35,8 +35,8 @@
 		<open src="styles/prosilver/template/overall_header.html">
 			<edit>
 				<find><![CDATA[</head>]]></find>
-				<action type="before-add"><![CDATA[<link rel="stylesheet" href="{ROOT_PATH}js/highlight/styles/github.css">
-<script src="{ROOT_PATH}js/highlight/highlight.pack.js"></script>
+				<action type="before-add"><![CDATA[<link href="{ROOT_PATH}js/highlight/styles/github.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{ROOT_PATH}js/highlight/highlight.pack.js"></script>
 <script type="text/javascript">
 // ]]>&lt;![CDATA[<![CDATA[
 hljs.initHighlightingOnLoad();
@@ -48,6 +48,16 @@ hljs.initHighlightingOnLoad();
 
 [highlight]{TEXT}[/highlight]
 
-<pre><code>{TEXT}</code></pre>]]></diy-instructions>
+<pre><code>{TEXT}</code></pre>
+
+Help: all code in [highlight][/highlight] will get automatically detected and prettified. is small snippets get the wrongly detected use the manual bbcode.
+
+and
+
+[highlight={SIMPLETEXT}]{TEXT}[/highlight]
+
+<pre><code class="{SIMPLETEXT}">{TEXT}</code></pre>
+
+Help: if you code is being incorrectly detected use this code and specify a syntax or type no-highlight in this way [highlight=no-highlight]thsi code[/highlight]]]></diy-instructions>
 	</action-group>
 </mod>

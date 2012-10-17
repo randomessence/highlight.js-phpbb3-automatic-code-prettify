@@ -7,6 +7,7 @@ FAR Style (c) MajestiC <majestic2k@gmail.com>
 pre code {
   display: block; padding: 0.5em;
   background: #000080;
+  overflow: auto;
 }
 
 pre code,

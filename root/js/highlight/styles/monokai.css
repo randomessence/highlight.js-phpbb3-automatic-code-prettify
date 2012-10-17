@@ -5,6 +5,7 @@ Monokai style - ported by Luigi Maselli - http://grigio.org
 pre code {
   display: block; padding: 0.5em;
   background: #272822;
+  overflow: auto;
 }
 
 pre .tag,

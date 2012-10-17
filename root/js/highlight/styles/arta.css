@@ -7,6 +7,7 @@ pre code
 {
   display: block; padding: 0.5em;
   background: #222;
+  overflow: auto;
 }
 
 pre .profile .header *,
