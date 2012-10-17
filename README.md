@@ -3,8 +3,19 @@ highlight.js-phpbb3-automatic-code-prettify
 
 this is a mod using [highlight.js](http://softwaremaniacs.org/soft/highlight/en/) to automatically detect syntax and prettify code. it's awesome.
 
-How does it work? well so far it laods the scripts into the overall header and with the use of a simple bbcode will detect, identify and [54 languages and is bundled with 26 style themes.](http://softwaremaniacs.org/media/soft/highlight/test.html)
+How does it work? well so far it loads the core scripts into the `overall_header.html` before the </head> closing tag like this:
 
+```html
+<link href="{ROOT_PATH}js/highlight/styles/github.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{ROOT_PATH}js/highlight/highlight.pack.js"></script>
+<script type="text/javascript">
+// <![CDATA[
+hljs.initHighlightingOnLoad();
+// ]]>
+</script>
+```
+
+Then with the use of a simple bbcode will it detect, identify and [54 languages and is bundled with 26 style themes.](http://softwaremaniacs.org/media/soft/highlight/test.html)
 
 BBcodes:
 
