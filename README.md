@@ -34,12 +34,14 @@ then 2 edits are required to complete this.
 
 open the `prosilver/template/bbcode.html` and find
 
-`<!-- BEGIN code_open --><dl class="codebox"><dt>{L_CODE}: <a href="#" onclick="selectCode(this); return false;">{L_SELECT_ALL_CODE}</a></dt><dd><pre><!-- END code_open -->
-<!-- BEGIN code_close --></pre></dd></dl><!-- END code_close -->`
+```html
+<!-- BEGIN code_open --><dl class="codebox"><dt>{L_CODE}: <a href="#" onclick="selectCode(this); return false;">{L_SELECT_ALL_CODE}</a></dt><dd><pre><!-- END code_open -->
+<!-- BEGIN code_close --></pre></dd></dl><!-- END code_close -->
+```
 
 and replace it with
 
-```
+```html
 <!-- BEGIN code_open --><dl class="codebox"><dt>{L_CODE}: <a href="#" onclick="selectCode(this); return false;">{L_SELECT_ALL_CODE}</a></dt><dd><pre><code><!-- END code_open -->
 <!-- BEGIN code_close --></code></pre></dd></dl><!-- END code_close -->
 ```
