@@ -61,4 +61,4 @@ replace it with
 
 the first edit makes it so all code is detected and prettifed in stock tags + fixes from the mod we installed.
 
-the second edit it jsut to the Select all feature works again if you remove `highlight.js from the `overall+header.html`
+the second edit it jsut to the Select all feature works again if you remove `highlight.js` from the `overall_header.html`
