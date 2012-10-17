@@ -7,15 +7,24 @@
 		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
 		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
 		<title lang="en"><![CDATA[Highlight.js Automatic Code Prettify]]></title>
-		<author-notes lang="en"><![CDATA[http://softwaremaniacs.org/soft/highlight/en/]]></author-notes>
+		<description lang="en"><![CDATA[Mod based on highlighter.js from http://softwaremaniacs.org/soft/highlight/en/
+
+https://github.com/isagalaev/highlight.js
+
+please see my github link for info and instructions instructions.
+
+https://github.com/randomessence/highlight.js-phpbb3-automatic-code-prettify]]></description>
 		<author-group>
 			<author>
 				<username><![CDATA[randomessence]]></username>
+				<homepage><![CDATA[www.digikool.co.uk]]></homepage>
+				<email><![CDATA[highlighter@digikool.co.uk]]></email>
 			</author>
 		</author-group>
 		<mod-version>0.1</mod-version>
 		<installation>
 			<level>easy</level>
+			<time>60</time>
 			<target-version>3.0.11</target-version>
 		</installation>
 		<history>
