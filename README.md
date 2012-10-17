@@ -38,10 +38,9 @@ open the `prosilver/template/bbcode.html` and find
 <!-- BEGIN code_close --></pre></dd></dl><!-- END code_close -->`
 
 and replace it with
-<pre>
-`<!-- BEGIN code_open --><dl class="codebox"><dt>{L_CODE}: <a href="#" onclick="selectCode(this); return false;">{L_SELECT_ALL_CODE}</a></dt><dd><pre><code><!-- END code_open -->
-<!-- BEGIN code_close --></code></pre></dd></dl><!-- END code_close -->`
-</pre>
+
+```<!-- BEGIN code_open --><dl class="codebox"><dt>{L_CODE}: <a href="#" onclick="selectCode(this); return false;">{L_SELECT_ALL_CODE}</a></dt><dd><pre><code><!-- END code_open -->
+<!-- BEGIN code_close --></code></pre></dd></dl><!-- END code_close -->```
 
 the open the `prosilver/template/forum_fn.js` and find
 
@@ -54,4 +53,4 @@ replace it with
 
 the first edit makes it so all code is detected and prettifed in stock tags + fixes from the mod we installed.
 
-the second edit it jsut to the Select all feature works again if you remove `highlight.js` from the `overall+header.html`
+the second edit it jsut to the Select all feature works again if you remove `highlight.js from the `overall+header.html`
