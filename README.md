@@ -17,23 +17,21 @@ hljs.initHighlightingOnLoad();
 
 Then with the use of a simple bbcode will it detect, identify and [54 languages and is bundled with 26 style themes.](http://softwaremaniacs.org/media/soft/highlight/test.html)
 
-BBcodes:
+##BBcodes:
 
-Standar highlighting with automatic detection and prettifying. 
+**Standard highlighting with automatic syntax detection and prettifying. ** 
 
 `[highlight]{TEXT}[/highlight]`
 
 `<pre><code>{TEXT}</code></pre>`
 
-**If you are getting a bad match use this custom code.**
-
+**If you are getting a bad syntax match with some snippets use this custom code below and manually specify your syntax.**
 
 `[highlight={SIMPLETEXT}]{TEXT}[/highlight]`
 
 `<pre><code class="{SIMPLETEXT}">{TEXT}</code></pre>`
 
 **Help:** if you code is being incorrectly detected use this code and specify a syntax or type `no-highlight` in this way `[highlight=no-highlight]thsi code[/highlight]`
-
 
 ##Notes
 
