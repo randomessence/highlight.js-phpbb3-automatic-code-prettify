@@ -3,7 +3,7 @@ highlight.js-phpbb3-automatic-code-prettify
 
 this is a mod using [highlight.js](http://softwaremaniacs.org/soft/highlight/en/) to automatically detect syntax and prettify code. it's awesome.
 
-How does it work? well so far it loads the core scripts into the `overall_header.html` before the </head> closing tag like this:
+How does it work? well so far it loads the core scripts into the `overall_header.html` before the `</head>` closing tag like this:
 
 ```html
 <link href="{ROOT_PATH}js/highlight/styles/github.css" rel="stylesheet" type="text/css" />
