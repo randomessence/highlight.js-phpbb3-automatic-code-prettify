@@ -28,7 +28,7 @@ Standar highlighting with automatic detection and prettifying.
 
 This mod can be made to automatically detect and prettify code used in the stock bbcode `[code]` tag. Sadly there are some pre requisites to make this work.
 
-this mod must be installed from phpbb.com.  [code enhancements](https://www.phpbb.com/customise/db/mod/code_enhancements/)
+**This mod must be installed from phpbb.com. -->** [code enhancements](https://www.phpbb.com/customise/db/mod/code_enhancements/)
 
 then 2 edits are required to complete this.
 
