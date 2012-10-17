@@ -39,8 +39,10 @@ open the `prosilver/template/bbcode.html` and find
 
 and replace it with
 
-```<!-- BEGIN code_open --><dl class="codebox"><dt>{L_CODE}: <a href="#" onclick="selectCode(this); return false;">{L_SELECT_ALL_CODE}</a></dt><dd><pre><code><!-- END code_open -->
-<!-- BEGIN code_close --></code></pre></dd></dl><!-- END code_close -->```
+```
+<!-- BEGIN code_open --><dl class="codebox"><dt>{L_CODE}: <a href="#" onclick="selectCode(this); return false;">{L_SELECT_ALL_CODE}</a></dt><dd><pre><code><!-- END code_open -->
+<!-- BEGIN code_close --></code></pre></dd></dl><!-- END code_close -->
+```
 
 the open the `prosilver/template/forum_fn.js` and find
 
