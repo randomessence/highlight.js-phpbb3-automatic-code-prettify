@@ -35,7 +35,9 @@ Then with the use of a simple bbcode will it detect, identify and [54 languages 
 
 **Display code inline like in this readme**
 
-The default syle of this mod is the `github.css` so edit it with a text editor and add this
+The default syle of this mod is the `github.css` so edit it with a text editor and add this. 
+
+NOTE: this is already done in the `github.cc` in the mod. it is just to show how to apply it to other styles.
 
 ```css
 pre.inlineHS {
