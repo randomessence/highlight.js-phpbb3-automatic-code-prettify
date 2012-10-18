@@ -40,11 +40,11 @@ The default syle of this mod is the `github.css` so edit it with a text editor a
 **NOTE:** this is already done in the `github.css` in the mod. it is just to show how to apply it to other styles.
 
 ```css
-pre.inlineHS {
- display:inline-block
+pre.inlinephs {
+ display:inline-block;
 }
-code.inlineHS {
- display:inline-block
+code.inlinechs {
+ display:inline;
 	padding-left:4px;
 	padding-right:4px;
 	padding-top:1px;
@@ -56,7 +56,7 @@ Now add another bbcode in th ACP
 
 `[INLINE]{TEXT}[/INLINE]`
 
-`<pre class="inlineHS no-highlight"><code class="inlineHS">{TEXT}</code></pre>`
+`<pre class="inlinephs no-highlight"><code class="inlinechs">{TEXT}</code></pre>`
 
 ##Notes
 

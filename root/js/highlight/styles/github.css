@@ -15,11 +15,11 @@ pre code {
   border-color: #D3D3D3;
 }
 
-pre.inlineHS {
+pre.inlinephs {
  display:inline-block;
 }
-code.inlineHS {
- display:inline-block;
+code.inlinechs {
+ display:inline;
 	padding-left:4px;
 	padding-right:4px;
 	padding-top:1px;
