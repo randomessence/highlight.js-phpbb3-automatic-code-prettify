@@ -33,6 +33,29 @@ Then with the use of a simple bbcode will it detect, identify and [54 languages 
 
 **Help:** if you code is being incorrectly detected use this code and specify a syntax or type `no-highlight` in this way `[highlight=no-highlight]thsi code[/highlight]`
 
+**Display code inline like in this readme**
+
+The default syle of this mod is the `github.css` so edit it with a text editor and add this
+
+```css
+pre.inlineHS {
+ display:inline-block
+}
+code.inlineHS {
+ display:inline-block
+	padding-left:4px;
+	padding-right:4px;
+	padding-top:1px;
+	padding-bottom:1px;
+}
+```
+
+Now add another bbcode in th ACP
+
+`[INLINE]{TEXT}[/INLINE]`
+
+`<pre class="inlineHS no-highlight"><code class="inlineHS">{TEXT}</code></pre>`
+
 ##Notes
 
 This mod can be made to automatically detect and prettify code used in the stock bbcode `[code]` tag. Sadly there are some pre requisites to make this work.
