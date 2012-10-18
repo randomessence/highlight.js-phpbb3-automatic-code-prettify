@@ -54,7 +54,7 @@ code.inlinechs {
 
 Now add another bbcode in th ACP
 
-`[INLINE]{TEXT}[/INLINE]`
+`[inline]{TEXT}[/inline]`
 
 `<pre class="inlinephs no-highlight"><code class="inlinechs">{TEXT}</code></pre>`
 
