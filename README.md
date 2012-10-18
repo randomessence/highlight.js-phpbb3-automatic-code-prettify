@@ -33,7 +33,7 @@ Then with the use of a simple bbcode will it detect, identify and [54 languages 
 
 **Help:** if you code is being incorrectly detected use this code and specify a syntax or type `no-highlight` in this way `[highlight=no-highlight]thsi code[/highlight]`
 
-**Display code inline like in this readme**
+**Display code `inline` like in this readme**
 
 The default syle of this mod is the `github.css` so edit it with a text editor and add this. 
 
