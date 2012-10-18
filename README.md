@@ -41,7 +41,7 @@ The default syle of this mod is the `github.css` so edit it with a text editor a
 
 ```css
 pre.inlinephs {
- display:inline-block;
+ display:inline;
 }
 code.inlinechs {
  display:inline;
