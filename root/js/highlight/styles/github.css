@@ -9,6 +9,10 @@ pre code {
   color: #333;
   background: #f8f8ff;
   overflow: auto;
+  border-radius: 3px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D3D3D3;
 }
 
 pre.inlineHS {
