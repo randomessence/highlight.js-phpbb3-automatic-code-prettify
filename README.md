@@ -31,7 +31,7 @@ Then with the use of a simple bbcode will it detect, identify and [54 languages 
 
 `<pre><code class="{SIMPLETEXT}">{TEXT}</code></pre>`
 
-**Help:** if you code is being incorrectly detected use this code and specify a syntax or type `no-highlight` in this way `[highlight=no-highlight]thsi code[/highlight]`
+**Help:** if you code is being incorrectly detected use this code and specify a syntax or type `no-highlight` in this way `[highlight=no-highlight]this code[/highlight]`
 
 **Display code `inline` like in this readme**
 
@@ -93,6 +93,6 @@ replace it with
 ```
 
 
-the first edit makes it so all code is detected and prettifed in stock tags + fixes from the mod we installed.
+The first edit makes it so all code is detected and prettifed in the stock tags + fixes from the mod we installed.
 
-the second edit it jsut to the Select all feature works again if you remove `highlight.js` from the `overall_header.html`
+The second edit is just so the Select all feature works again if you remove `highlight.js` from the `overall_header.html` since the previous mod changes the tag from `CODE` to `PRE` and we have to change it back so it will work with our addition of the `<code>` tag to the `prosilver/template/bbcode.html`
