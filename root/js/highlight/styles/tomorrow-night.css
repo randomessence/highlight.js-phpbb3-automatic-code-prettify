@@ -42,6 +42,17 @@ pre code {
   overflow: auto;
 }
 
+pre.inlinephs {
+ display:inline-block;
+}
+code.inlinechs {
+ display:inline;
+    padding-left:4px;
+    padding-right:4px;
+    padding-top:1px;
+    padding-bottom:1px;
+}
+
 pre .coffeescript .javascript,
 pre .javascript .xml,
 pre .tex .formula,
