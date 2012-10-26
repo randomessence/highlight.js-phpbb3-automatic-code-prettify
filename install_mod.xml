@@ -6,7 +6,7 @@
 	<header>
 		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
 		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
-		<title lang="en"><![CDATA[Highlight.js Automatic Code Prettify]]></title>
+		<title lang="en"><![CDATA[Highlight.js Automatic Code Prettify v1.0.0]]></title>
 		<description lang="en"><![CDATA[Mod based on highlighter.js from http://softwaremaniacs.org/soft/highlight/en/
 
 https://github.com/isagalaev/highlight.js
@@ -14,14 +14,15 @@ https://github.com/isagalaev/highlight.js
 please see my github link for info and instructions instructions.
 
 https://github.com/randomessence/highlight.js-phpbb3-automatic-code-prettify]]></description>
+		<author-notes lang="en"><![CDATA[check github link in author url for info.]]></author-notes>
 		<author-group>
 			<author>
 				<username><![CDATA[randomessence]]></username>
-				<homepage><![CDATA[http://www.digikool.co.uk/phpbb/]]></homepage>
+				<homepage><![CDATA[https://github.com/randomessence/highlight.js-phpbb3-automatic-code-prettify]]></homepage>
 				<email><![CDATA[highlighter@digikool.co.uk]]></email>
 			</author>
 		</author-group>
-		<mod-version>0.1</mod-version>
+		<mod-version>1.0.0</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>60</time>
@@ -35,16 +36,46 @@ https://github.com/randomessence/highlight.js-phpbb3-automatic-code-prettify]]><
 					<change><![CDATA[first revision]]></change>
 				</changelog>
 			</entry>
+			<entry>
+				<date>2012-10-25</date>
+				<rev-version>1.0.0</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[added simple method of editing theme via acp.]]></change>
+				</changelog>
+			</entry>
 		</history>
 	</header>
 	<action-group>
+		<sql><![CDATA[INSERT IGNORE INTO `phpbb_config` (`config_name`, `config_value`, `is_dynamic`) VALUES('hljs_theme', 'github', 0);]]></sql>
 		<copy>
 			<file from="root/*.*" to="*.*"/>
 		</copy>
+		<open src="includes/functions.php">
+			<edit>
+				<find><![CDATA[		'SITE_DESCRIPTION'				=> $config['site_desc'],]]></find>
+				<action type="before-add"><![CDATA[		'HLJS_THEME'					=> $config['hljs_theme'],]]></action>
+			</edit>
+		</open>
+		<open src="includes/acp/acp_board.php">
+			<edit>
+				<find><![CDATA[						'legend2'				=> 'ACP_LOAD_SETTINGS',]]></find>
+				<action type="before-add"><![CDATA[		'hljs_theme'					=> array('lang' => 'HLJS_THEME_NAME',		'validate' => 'string',	'type' => 'text:40:255', 'explain' => true),
+]]></action>
+			</edit>
+		</open>
+		<open src="language/en/acp/board.php">
+			<edit>
+				<find><![CDATA[	'JAB_USERNAME_EXPLAIN'		=> 'Specify a registered username or a valid JID. The username will not be checked for validity. If you only specify a username, then your JID will be the username and the server you specified above. Else, specify a valid JID, for example user@jabber.org.',]]></find>
+				<action type="after-add"><![CDATA[// Highlighter.js Themes
+	'HLJS_THEME_NAME'				=> 'Highlighter.js Themes',
+	'HLJS_THEME_NAME_EXPLAIN'		=> 'To change the theme to one of the included themes you need to specify the theme name here. A theme name is the name of the css file. So for github.css we enter simply: github .',
+// End Highlighter.js Themes]]></action>
+			</edit>
+		</open>
 		<open src="styles/prosilver/template/overall_header.html">
 			<edit>
 				<find><![CDATA[</head>]]></find>
-				<action type="before-add"><![CDATA[<link href="{ROOT_PATH}js/highlight/styles/github.css" rel="stylesheet" type="text/css" />
+				<action type="before-add"><![CDATA[<link href="{ROOT_PATH}js/highlight/styles/{HLJS_THEME}.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="{ROOT_PATH}js/highlight/highlight.pack.js"></script>
 <script type="text/javascript">
 // ]]>&lt;![CDATA[<![CDATA[
