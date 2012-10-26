@@ -37,7 +37,7 @@ Then with the use of a simple bbcode will it detect, identify and [54 languages 
 
 The default syle of this mod is the `github.css` so edit it with a text editor and add this. 
 
-**NOTE:** this is already done in the `github.css` in the mod. it is just to show how to apply it to other styles.
+**NOTE:** this is already done in for all css files in the mod. it is just to show how to apply it to other new or custom styles.
 
 ```css
 pre.inlinephs {
