@@ -6,7 +6,7 @@
 	<header>
 		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
 		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
-		<title lang="en"><![CDATA[Highlight.js Automatic Code Prettify v1.0.0]]></title>
+		<title lang="en"><![CDATA[Highlight.js Automatic Code Prettify v1.0.1]]></title>
 		<description lang="en"><![CDATA[Mod based on highlighter.js from http://softwaremaniacs.org/soft/highlight/en/
 
 https://github.com/isagalaev/highlight.js
@@ -22,7 +22,7 @@ https://github.com/randomessence/highlight.js-phpbb3-automatic-code-prettify]]><
 				<email><![CDATA[highlighter@digikool.co.uk]]></email>
 			</author>
 		</author-group>
-		<mod-version>1.0.0</mod-version>
+		<mod-version>1.0.1</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>60</time>
@@ -43,14 +43,31 @@ https://github.com/randomessence/highlight.js-phpbb3-automatic-code-prettify]]><
 					<change><![CDATA[added simple method of editing theme via acp.]]></change>
 				</changelog>
 			</entry>
+			<entry>
+				<date>2012-10-27</date>
+				<rev-version>1.0.1</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[improved acp style method. subsilver support.]]></change>
+				</changelog>
+			</entry>
 		</history>
+		<link-group>
+			<link type="template" href="contrib/subsilver2/subsilver2.xml" lang="en">subsilver2</link>
+			<link type="language" href="contrib/languages/en_us.xml" lang="en">en_us</link>
+		</link-group>
 	</header>
 	<action-group>
-		<sql><![CDATA[INSERT IGNORE INTO `phpbb_config` (`config_name`, `config_value`, `is_dynamic`) VALUES('hljs_theme', 'github', 0);]]></sql>
 		<copy>
 			<file from="root/*.*" to="*.*"/>
 		</copy>
 		<open src="includes/functions.php">
+			<edit>
+				<find><![CDATA[	// The following assigns all _common_ variables that may be used at any point in a template.]]></find>
+				<action type="before-add"><![CDATA[     if (empty($config['hljs_theme'])) 
+     {
+     set_config('hljs_theme', 'github', false);
+     }]]></action>
+			</edit>
 			<edit>
 				<find><![CDATA[		'SITE_DESCRIPTION'				=> $config['site_desc'],]]></find>
 				<action type="before-add"><![CDATA[		'HLJS_THEME'					=> $config['hljs_theme'],]]></action>

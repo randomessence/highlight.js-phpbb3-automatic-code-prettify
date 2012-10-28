@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="modx.prosilver.en.xsl"?>
+<!--NOTICE: Please open this file in your web browser. If presented with a security warning, you may safely tell it to allow the blocked content.-->
+<!--For security purposes, please check: http://www.phpbb.com/mods/ for the latest version of this MOD.\nAlthough MODs are checked before being allowed in the MODs Database there is no guarantee that there are no security problems within the MOD.\nNo support will be given for MODs not found within the MODs Database which can be found at http://www.phpbb.com/mods/-->
+<mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.phpbb.com/mods/xml/modx-1.2.5.xsd">
+	<header>
+		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
+		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
+		<title lang="en"><![CDATA[Highlight.js Automatic Code Prettify v1.0.1]]></title>
+		<description lang="en"><![CDATA[Mod based on highlighter.js from http://softwaremaniacs.org/soft/highlight/en/
+
+https://github.com/isagalaev/highlight.js
+
+please see my github link for info and instructions instructions.
+
+https://github.com/randomessence/highlight.js-phpbb3-automatic-code-prettify]]></description>
+		<author-notes lang="en"><![CDATA[check github link in author url for info.]]></author-notes>
+		<author-group>
+			<author>
+				<username><![CDATA[randomessence]]></username>
+				<homepage><![CDATA[https://github.com/randomessence/highlight.js-phpbb3-automatic-code-prettify]]></homepage>
+				<email><![CDATA[highlighter@digikool.co.uk]]></email>
+			</author>
+		</author-group>
+		<mod-version>1.0.1</mod-version>
+		<installation>
+			<level>easy</level>
+			<time>60</time>
+			<target-version>3.0.11</target-version>
+		</installation>
+	</header>
+	<action-group>
+		<open src="language/en_us/acp/board.php">
+			<edit>
+				<find><![CDATA[	'JAB_USERNAME_EXPLAIN'		=> 'Specify a registered username or a valid JID. The username will not be checked for validity. If you only specify a username, then your JID will be the username and the server you specified above. Else, specify a valid JID, for example user@jabber.org.',]]></find>
+				<action type="after-add"><![CDATA[// Highlighter.js Themes
+	'HLJS_THEME_NAME'				=> 'Highlighter.js Themes',
+	'HLJS_THEME_NAME_EXPLAIN'		=> 'To change the theme to one of the included themes you need to specify the theme name here. A theme name is the name of the css file. So for github.css we enter simply: github .',
+// End Highlighter.js Themes]]></action>
+			</edit>
+		</open>
+	</action-group>
+</mod>
