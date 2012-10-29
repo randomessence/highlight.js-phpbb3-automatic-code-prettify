@@ -76,8 +76,7 @@ https://github.com/randomessence/highlight.js-phpbb3-automatic-code-prettify]]><
 		<open src="includes/acp/acp_board.php">
 			<edit>
 				<find><![CDATA[						'legend2'				=> 'ACP_LOAD_SETTINGS',]]></find>
-				<action type="before-add"><![CDATA[		'hljs_theme'					=> array('lang' => 'HLJS_THEME_NAME',		'validate' => 'string',	'type' => 'text:40:255', 'explain' => true),
-]]></action>
+				<action type="before-add"><![CDATA[						'hljs_theme'			=> array('lang' => 'HLJS_THEME_NAME',		'validate' => 'string',	'type' => 'text:40:255', 'explain' => true),]]></action>
 			</edit>
 		</open>
 		<open src="language/en/acp/board.php">
