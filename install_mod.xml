@@ -52,8 +52,8 @@ https://github.com/randomessence/highlight.js-phpbb3-automatic-code-prettify]]><
 			</entry>
 		</history>
 		<link-group>
-			<link type="template" href="contrib/subsilver2/subsilver2.xml" lang="en">subsilver2</link>
-			<link type="language" href="contrib/languages/en_us.xml" lang="en">en_us</link>
+			<link type="template" href="subsilver2.xml" lang="en">subsilver2</link>
+			<link type="language" href="en_us.xml" lang="en">en_us</link>
 		</link-group>
 	</header>
 	<action-group>
