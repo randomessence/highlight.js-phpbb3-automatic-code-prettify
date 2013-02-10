@@ -17,6 +17,7 @@ pre code {
 
 pre.inlinephs {
  display:inline-block;
+ white-space: pre-wrap;
 }
 code.inlinechs {
  display:inline;
@@ -24,6 +25,7 @@ code.inlinechs {
 	padding-right:4px;
 	padding-top:1px;
 	padding-bottom:1px;
+	white-space: pre-wrap;
 }
 
 pre .comment,
